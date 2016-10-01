@@ -13,7 +13,8 @@
 // $form-label: #65647A;
 // $form-input: #5293A6;
 
-body {
+// Overriding bootstrap stuff by giving body a class
+body.ruutly-body {
 	background-color: #F0F2F7;
 	font-family: 'Open Sans', sans-serif;
 }
