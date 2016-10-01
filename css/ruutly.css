@@ -29,6 +29,25 @@ h6 {
   font-weight: 600;
 }
 
+h1 .strong,
+h2 .strong,
+h3 .strong,
+h4 .strong,
+h5 .strong,
+h6 .strong {
+  font-weight: 800;
+}
+
+p {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;	
+  font-size: 16px;
+}
+
+p.small {
+	font-size: 13px;
+}
+
 section {
 	padding: 50px 0;
 }
@@ -91,10 +110,6 @@ header {
   background-color: #FFF;
 }
 
-header h1 .strong {
-  font-weight: 800;
-}
-
 header h1, h2 {
 	color: #24262F;
   margin-bottom: 30px;
@@ -104,6 +119,7 @@ hr {
 	border-width: 4px;
 	width: 100px;
 	position: relative;
+  left: -20px;
 }
 
 hr:after {
@@ -169,7 +185,7 @@ header .content hr:after {
           transition: all 250ms ease 0s;
 }
 
-.button:hover {
+.button:hover, .button:focus, button:active {
 	-webkit-box-shadow: 0px 0px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 	-moz-box-shadow:    0px 0px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 	box-shadow:         0px 0px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -184,4 +200,113 @@ header .content hr:after {
 
 .button.green {
 	background-color: #25DFB7;
+}
+
+#about .content hr {
+	border-color: #24262F;
+}
+
+#about .content hr:after {
+	background-color: #24262F;
+}
+
+#about .content {
+	text-align: center;
+}
+
+#product {
+	text-align: center;
+	background: no-repeat center center;
+	background-color: #5B29B2;
+	background-size: 500px;
+	background-image: url('../img/product.png');
+}
+
+#product p.product-p {
+	text-transform: uppercase;
+	font-weight: 600;
+	font-style: italic;
+}
+
+
+
+@media (max-width: 767px) {
+	#product {
+		background-image: none;
+	}
+
+	#product .col-xs-hidden {
+		display: none;
+	}
+
+	#product .col-xs-visible {
+		display: block;
+	}
+
+	#product .content {
+		margin-bottom: 20px;
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	#product {
+		background-image: none;
+	}
+
+	#product .col-sm-hidden {
+		display: none;
+	}
+
+	#product .col-sm-visible {
+		display: block;
+	}
+
+	#product .content {
+		margin-bottom: 20px;
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+  
+}
+
+@media (min-width: 992px) {
+
+	#product .col-md-hidden {
+		display: none;
+	}
+
+	#product .content {
+		margin-bottom: 40px;
+		width: 85%;
+	}
+
+	#product .content.right {
+		margin-left: auto;
+	}
+
+	#product .content.left {
+		margin-right: auto;	
+	}
+
+	#product .row:nth-child(4) .content {
+		margin-bottom: 0px;
+	}
+
+}
+
+#product hr {
+	border-width: 3px;
+	margin-top: 10px;
+	border-color: #fff;
+}
+
+#product hr:after {
+	background-color: #fff;
+	height: 3px;
 }
