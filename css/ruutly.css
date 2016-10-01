@@ -1,0 +1,19 @@
+// Some Variables to reffer to
+// $open-sans: 'Open Sans', sans-serif !important;
+
+// $color-dark: #24262F;
+// $color-purple: #5B29B2;
+// $color-green: #25DFB7;
+// $color-green-hover: #22BC97;
+// $color-pink: #f05c7e;
+// $color-pink-hover: #DB5276;
+// $color-offwhite: #F0F2F7;
+// $color-darkgray: #8492A6;
+// $color-lightgray: #D3DCE6;
+// $form-label: #65647A;
+// $form-input: #5293A6;
+
+body {
+	background-color: #F0F2F7;
+	font-family: 'Open Sans', sans-serif;
+}
