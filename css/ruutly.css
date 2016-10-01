@@ -14,7 +14,174 @@
 // $form-input: #5293A6;
 
 // Overriding bootstrap stuff by giving body a class
-body.ruutly-body {
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+
+section {
+	padding: 50px 0;
+}
+
+.bg-white {
+	background-color: #fff;
+	color: #24262F;
+}
+
+.bg-offwhite {
 	background-color: #F0F2F7;
-	font-family: 'Open Sans', sans-serif;
+	color: #24262F;
+}
+
+.bg-purple {
+	background-color: #5B29B2;
+	color: #FFF;
+}
+
+.bg-dark {
+	background-color: #24262F;
+	color: #FFF;
+}
+
+@media (min-width: 768px) {
+	h1 {
+		font-size: 36px;
+	}
+	h2 {
+		font-size: 24px;
+	}
+	h3 {
+		font-size: 18px;
+	}
+	p {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 767px) {
+	h1 {
+		font-size: 30px;
+	}
+	h2 {
+		font-size: 20px;
+	}
+	h3 {
+		font-size: 14px;
+	}
+	p {
+		font-size: 12px;
+	}
+}
+
+header {
+  position: relative;
+  display: block;
+  height: auto;
+  width: auto;
+  background-color: #FFF;
+}
+
+header h1 .strong {
+  font-weight: 800;
+}
+
+header h1, h2 {
+	color: #24262F;
+  margin-bottom: 30px;
+}
+
+hr {
+	border-width: 4px;
+	width: 100px;
+	position: relative;
+}
+
+hr:after {
+	content: '';
+	width: 10px;
+	height: 4px;
+	position: absolute;
+	right: -20px;
+	bottom: 0px;
+}
+
+header .content {
+	text-align: center;
+}
+
+header .content hr {
+	border-color: #24262F;
+}
+
+header .content hr:after {
+	background-color: #24262F;
+}
+
+@media (max-width: 767px) {
+	header {
+		padding: 100px 15px;
+	}
+	header.content {
+		width: 100%;
+	}
+
+	.button.xlarge {
+		font-size: 14px;
+		padding: 15px 50px;
+	}
+
+}
+
+@media (min-width: 768px) {
+
+	header {
+		padding: 175px 0;
+	}
+  header .content {
+	  margin: auto;
+	  max-width: 768px;
+	} 
+  
+}
+
+.button {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	line-height: 100px;
+	font-weight: 600;
+	font-style: italic;
+	border-radius: 4px;
+	-webkit-transition: all 250ms ease 0s;
+     -moz-transition: all 250ms ease 0s;
+      -ms-transition: all 250ms ease 0s;
+       -o-transition: all 250ms ease 0s;
+          transition: all 250ms ease 0s;
+}
+
+.button:hover {
+	-webkit-box-shadow: 0px 0px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	-moz-box-shadow:    0px 0px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	box-shadow:         0px 0px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	text-decoration: none;
+	color: #fff;
+}
+
+.button.xlarge {
+	font-size: 16px;
+	padding: 20px 60px;
+}
+
+.button.green {
+	background-color: #25DFB7;
 }
