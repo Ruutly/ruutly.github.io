@@ -365,6 +365,30 @@ header .content hr:after {
 	text-align: center;
 }
 
+@media (min-width: 767px) {
+	#about .content {
+		max-width: 400px;
+		margin: 0 auto;
+	}
+}
+
+
+@media (min-width: 992px) {
+	#about .content {
+		margin-top: 100px;
+	}
+}
+
+.cocoen__drag {
+	background-color: #f05c7e !important;
+}
+
+.cocoen__drag:before {
+	border-color: #f05c7e !important;
+  width: 14px !important;
+  margin-left: -7px !important;
+}
+
 #product {
 	text-align: center;
 	background: no-repeat center center;
