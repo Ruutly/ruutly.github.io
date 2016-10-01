@@ -26,7 +26,7 @@ h4,
 h5,
 h6 {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 a {
@@ -48,7 +48,7 @@ h6 .strong {
 
 p {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-weight: 400;	
+  font-weight: 300;	
   font-size: 16px;
 }
 
@@ -479,6 +479,7 @@ header .content hr:after {
 #pricing .link {
 	color: #f05c7e;
 	text-decoration: none;
+	font-weight: 600;
 }
 
 #pricing .link:hover, .link:active, .link:focus {
@@ -515,6 +516,73 @@ header .content hr:after {
 	#pricing ul li {
 		width: 33.333%;
 		float: left;
+	}
+
+}
+
+#study h3, #study p.small, #study .cta-col {
+	text-align: center;
+}
+
+#study hr {
+	border-color: #fff;
+	border-width: 3px;
+	margin-top: 10px;
+}
+
+#study hr:after {
+	background-color: #fff;
+	height: 3px;
+}
+
+#study ul {
+	text-align: right;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#study ul li {
+	font-size: 18px;
+	line-height: 30px;
+	font-style: italic;
+	font-weight: 300;
+}
+
+#study ul li img {
+	margin-left: 5px;
+}
+
+#study ul li .strong {
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+	#study ul {
+		text-align: center;
+
+	}
+
+}
+
+#study .quote-small {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+#study .quote-small .quote-text {
+	font-size: 16px;
+	margin-bottom: 0;
+}
+
+#study .quote-small .quote-by {
+	font-size: 12px;
+	text-align: right;
+}
+
+@media (min-width: 768px) {
+	#study .quote-small {
+		margin-top: 50px;
 	}
 
 }
