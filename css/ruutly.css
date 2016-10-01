@@ -124,6 +124,15 @@ section {
 	width: auto;
 }
 
+@media (max-width: 767px) {
+	.navbar-default .navbar-header .navbar-brand {
+	  padding: 5px;
+	}
+	.navbar-brand img {
+		height: 40px;		
+	}
+}
+
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
   color: #f05c7e;
