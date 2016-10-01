@@ -84,6 +84,128 @@ section {
 	color: #FFF;
 }
 
+.navbar-nav>li>a.header-button {
+	border: 2px solid #25DFB7;
+  padding: 5px 15px;
+	margin-top: 10px;
+	-webkit-transition: all 250ms ease 0s;
+   -moz-transition: all 250ms ease 0s;
+    -ms-transition: all 250ms ease 0s;
+     -o-transition: all 250ms ease 0s;
+        transition: all 250ms ease 0s;
+}
+
+.navbar-nav>li>a.header-button:hover, .navbar-nav>li>a.header-button:active, .navbar-nav>li>a.header-button:focus {
+	color: #fff !important;
+	background-color: #22BC97;
+}
+
+.navbar-default {
+  background-color: #fff;
+  border-color: rgba(34, 34, 34, 0.05);
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.navbar-default .navbar-header .navbar-brand {
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #f05c7e;
+  padding: 15px;
+}
+
+.navbar-brand img {
+	height: 60px;
+	-webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+	width: auto;
+}
+
+.navbar-default .navbar-header .navbar-brand:hover,
+.navbar-default .navbar-header .navbar-brand:focus {
+  color: #f05c7e;
+}
+.navbar-default .navbar-header .navbar-toggle {
+  font-size: 12px;
+  color: #24262F;
+  padding: 8px 10px;
+}
+.navbar-default .nav > li > a {
+  font-size: 13px;
+}
+.navbar-default .nav > li > a,
+.navbar-default .nav > li > a:focus {
+  color: #24262F;
+}
+.navbar-default .nav > li > a:hover,
+.navbar-default .nav > li > a:focus:hover {
+  color: #f05c7e;
+}
+.navbar-default .nav > li.active > a,
+.navbar-default .nav > li.active > a:focus {
+  color: #f05c7e !important;
+  background-color: transparent;
+}
+.navbar-default .nav > li.active > a:hover,
+.navbar-default .nav > li.active > a:focus:hover {
+  background-color: transparent;
+}
+@media (min-width: 768px) {
+  .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+  }
+  .navbar-default .navbar-header .navbar-brand {
+    color: #24262F;
+  }
+  .navbar-default .navbar-header .navbar-brand:hover,
+  .navbar-default .navbar-header .navbar-brand:focus {
+    color: #f05c7e;
+  }
+  .navbar-default .nav > li > a,
+  .navbar-default .nav > li > a:focus {
+    color: #24262F;
+  }
+  .navbar-default .nav > li > a:hover,
+  .navbar-default .nav > li > a:focus:hover {
+    color: #f05c7e;
+  }
+  .navbar-default.affix {
+    background-color: #fff;
+    border-color: rgba(34, 34, 34, 0.1);
+  }
+  .navbar-default.affix .navbar-header .navbar-brand {
+    color: #24262F;
+  }
+  .navbar-default.affix .navbar-header .navbar-brand {
+	  font-weight: 300;
+	  letter-spacing: 1px;
+	  color: #f05c7e;
+	  padding: 5px;
+	}
+
+	.navbar-default.affix .navbar-brand img {
+		height: 40px;
+		width: auto;
+	}
+
+  .navbar-default.affix .navbar-header .navbar-brand:hover,
+  .navbar-default.affix .navbar-header .navbar-brand:focus {
+    color: #f05c7e;
+  }
+  .navbar-default.affix .nav > li > a,
+  .navbar-default.affix .nav > li > a:focus {
+    color: #24262F;
+  }
+  .navbar-default.affix .nav > li > a:hover,
+  .navbar-default.affix .nav > li > a:focus:hover {
+    color: #f05c7e;
+  }
+}
+
 @media (min-width: 768px) {
 	h1 {
 		font-size: 36px;
@@ -585,4 +707,35 @@ header .content hr:after {
 		margin-top: 50px;
 	}
 
+}
+
+footer {
+	background-color: #fff;
+	color: #24262F;
+	padding: 20px;
+	text-align: center;
+}
+
+footer p {
+	font-size: 12px;
+}
+
+footer ul {
+	font-size: 12px;
+	margin: 0;
+}
+
+footer ul li a {
+	color: #24262F;
+	text-decoration: none;
+	-webkit-transition: all 250ms ease 0s;
+     -moz-transition: all 250ms ease 0s;
+      -ms-transition: all 250ms ease 0s;
+       -o-transition: all 250ms ease 0s;
+          transition: all 250ms ease 0s;
+}
+
+footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
+	color: #f05c7e;
+	text-decoration: none;
 }
