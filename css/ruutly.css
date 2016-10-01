@@ -29,6 +29,14 @@ h6 {
   font-weight: 600;
 }
 
+a {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+ul li {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
 h1 .strong,
 h2 .strong,
 h3 .strong,
@@ -60,6 +68,10 @@ section {
 .bg-offwhite {
 	background-color: #F0F2F7;
 	color: #24262F;
+}
+
+.bg-offwhite p {
+	color: #8492A6;
 }
 
 .bg-purple {
@@ -117,9 +129,9 @@ header h1, h2 {
 
 hr {
 	border-width: 4px;
-	width: 100px;
+	width: 75px;
 	position: relative;
-  left: -20px;
+  left: -10px;
 }
 
 hr:after {
@@ -174,7 +186,6 @@ header .content hr:after {
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #fff;
-	line-height: 100px;
 	font-weight: 600;
 	font-style: italic;
 	border-radius: 4px;
@@ -183,6 +194,11 @@ header .content hr:after {
       -ms-transition: all 250ms ease 0s;
        -o-transition: all 250ms ease 0s;
           transition: all 250ms ease 0s;
+}
+
+.button.block {
+	display: block;
+	padding: 10px 0;
 }
 
 .button:hover, .button:focus, button:active {
@@ -196,6 +212,7 @@ header .content hr:after {
 .button.xlarge {
 	font-size: 16px;
 	padding: 20px 60px;
+	line-height: 100px;
 }
 
 .button.green {
@@ -204,10 +221,13 @@ header .content hr:after {
 
 #about .content hr {
 	border-color: #24262F;
+	border-width: 3px;
+	margin-top: 10px;
 }
 
 #about .content hr:after {
 	background-color: #24262F;
+	height: 3px;
 }
 
 #about .content {
@@ -283,7 +303,7 @@ header .content hr:after {
 
 	#product .content {
 		margin-bottom: 40px;
-		width: 85%;
+		width: 80%;
 	}
 
 	#product .content.right {
@@ -309,4 +329,192 @@ header .content hr:after {
 #product hr:after {
 	background-color: #fff;
 	height: 3px;
+}
+
+#how {
+	text-align: center;
+}
+
+#how hr {
+	border-color: #24262F;
+	border-width: 3px;
+	margin-top: 10px;
+}
+
+#how hr:after {
+	background-color: #24262F;
+	height: 3px;
+}
+
+#how p.strong {
+	color: #24262F;
+	font-weight: 600;
+	margin-top: 30px;
+}
+
+#how img {
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+#how p:not(.strong) {
+	margin-bottom: 30px;
+}
+
+#how .col-sm-6 {
+	min-height: 206px;
+}
+
+#quote {
+	text-align: center;
+}
+
+#quote .quote {
+	max-width: 700px;
+	margin: auto;
+}
+
+#quote .quote-text {
+	font-weight: 800;
+	font-size: 30px;
+	font-style: italic;
+}
+
+@media (max-width: 767px) {
+	#quote .quote-text {
+		font-size: 16px;
+	}
+
+}
+
+#pricing {
+	text-align: center;
+}
+
+#pricing hr {
+	border-color: #24262F;
+	border-width: 3px;
+	margin-top: 10px;
+}
+
+#pricing hr:after {
+	background-color: #24262F;
+	height: 3px;
+}
+
+#pricing .pricing-toggle {
+	line-height: 80px;
+}
+
+#pricing .pricing-toggle .toggle-button {
+  padding: 10px 30px;
+  border: 2px solid #f05c7e;
+  margin: -3px;
+  font-size: 14px;
+  font-weight: 800;
+  color: #f05c7e;
+  text-decoration: none;
+  font-weight: 
+}
+
+#pricing .pricing-toggle .toggle-button.active {
+  background-color: #f05c7e;
+  color: #fff;
+}
+
+#pricing .pricing-block {
+	padding: 20px;
+	border: 2px solid #24262F;
+	border-radius: 4px;
+	margin: 20px 0;
+}
+
+#pricing .pricing-block.highlight {
+	border: 2px solid #f05c7e;
+	position: relative;
+}
+
+#pricing .pricing-block.highlight:after {
+	content: "Best Value";
+	position: absolute;
+  top: -25px;
+  right: 0px;
+  color: #f05c7e;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+}
+
+#pricing .pricing-block .title {
+	font-size: 20px;
+	font-weight: 600;
+	font-style: italic;
+	color: #24262F;
+}
+
+#pricing .pricing-block .number {
+	line-height: 26px;
+	font-weight: 400;
+	color: #24262F;
+}
+
+#pricing .pricing-block .number span {
+	font-size: 30px;
+	font-weight: 600;
+	color: #f05c7e;
+}
+
+#pricing .pricing-block .price {
+	font-size: 14px;
+	line-height: 40px;
+	font-weight: 400;
+	color: #24262F;
+}
+
+#pricing .pricing-block .price .value {
+	font-size: 16px;
+	font-weight: 600;
+	color: #24262F;
+}
+
+#pricing .link {
+	color: #f05c7e;
+	text-decoration: none;
+}
+
+#pricing .link:hover, .link:active, .link:focus {
+	color: #DB5276;
+	text-decoration: none;
+}
+
+#pricing ul {
+	margin-top: 20px;
+	display: block;
+	overflow: auto;
+}
+
+#pricing ul li {
+	line-height: 30px;
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 14px;
+}
+
+#pricing ul li img {
+	margin-right: 5px;
+}
+
+@media (max-width: 991px) {
+	#pricing ul li {
+		max-width: 280px;
+		margin: 0 auto;
+	}
+
+}
+
+@media (min-width: 992px) {
+	#pricing ul li {
+		width: 33.333%;
+		float: left;
+	}
+
 }
