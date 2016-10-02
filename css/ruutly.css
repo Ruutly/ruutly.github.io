@@ -457,7 +457,7 @@ header .content hr:after {
 	}
 
 	#product .content {
-		margin-bottom: 40px;
+    margin-bottom: 85px;
 		width: 80%;
 	}
 
@@ -470,6 +470,7 @@ header .content hr:after {
 	}
 
 	#product .row:nth-child(4) .content {
+		margin-top: 40px;
 		margin-bottom: 0px;
 	}
 
