@@ -414,6 +414,11 @@
 					});
         });
 	    });
+
+	    $('#lets-talk').click(function(e) {
+	    	e.preventDefault();
+	    	analytics.track('Lets Talk');
+	    });
     </script>
 
 	</body>
