@@ -69,7 +69,7 @@
               <a class="page-scroll" href="#pricing">Pricing</a>
             </li>
             <li>
-              <a href="https://app.ruutly.com" target="_blank" class="header-button">Login</a>
+              <a href="https://app.ruutly.com/login" class="header-button">Login</a>
             </li>
           </ul>
         </div>
@@ -83,7 +83,7 @@
 				<h1><span class="strong">Supercharge</span> your job postings</h1>
 				<hr>
 				<h2>Ruutly is a beautifully-branded, interactive candidate experience directly in your job postings. Welcome to the future.</h2>
-				<a href="#" class="button xlarge green">Try it for free</a>
+				<a href="https://app.ruutly.com/signup" class="button xlarge green">Try it for free</a>
 			</div>
 		</header>
 
@@ -95,7 +95,7 @@
 							<h3>See the difference <span class="strong">for yourself.</span></h3>
 							<hr>
 							<p>Click and drag the pink slider to compare a job posting without Ruutly vs. a posting with Ruutly included.</p>
-							<a href="#" class="button xlarge green">Try it for free</a>
+							<a href="https://app.ruutly.com/signup" class="button xlarge green">Try it for free</a>
 						</div>
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-8">
@@ -175,7 +175,7 @@
 				</div>
 				<div class="row">
 					<div class="col-xs-12">
-						<a href="#" class="button xlarge green">Try it for free</a>	
+						<a href="https://app.ruutly.com/signup" class="button xlarge green">Try it for free</a>	
 					</div>
 					
 				</div>
@@ -243,55 +243,64 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<div class="pricing-toggle">
-							<a href="#" class="toggle-button active">Annually</a>
-							<a href="#" class="toggle-button">Monthly</a>
+							<a href="#" id="annual-toggle" class="toggle-button active">Annually</a>
+							<a href="#" id="month-toggle" class="toggle-button">Monthly</a>
 						</div>
 					</div>
 				</div>
-				<div class="row" class="annual-pricing">
+				<div class="row">
 					<div class="col-xs-12 col-sm-6 col-md-3">
 						<div class="pricing-block">
-							<p class="title">Solo</p>
+							<p class="title">Start</p>
 							<p class="number"><span>1</span><br>active widgets</p>
-							<p class="price">$<span class="value">99</span>/mo</p>
+							<p class="price annual-price">$<span class="value">99</span>/mo*</p>
+							<p class="price monthly-price" style="display: none;">$<span class="value">119</span>/mo*</p>
 							<p class="pricing-cta">
-								<a href="#" class="button block green">Request Demo</a>
-							</p>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-3">
-						<div class="pricing-block">
-							<p class="title">Lite</p>
-							<p class="number"><span>3</span><br>active widgets</p>
-							<p class="price">$<span class="value">199</span>/mo</p>
-							<p class="pricing-cta">
-								<a href="#" class="button block green">Request Demo</a>
-							</p>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-3">
-						<div class="pricing-block">
-							<p class="title">Small</p>
-							<p class="number"><span>6</span><br>active widgets</p>
-							<p class="price">$<span class="value">399</span>/mo</p>
-							<p class="pricing-cta">
-								<a href="#" class="button block green">Request Demo</a>
+								<a href="https://app.ruutly.com/signup?plan=start_yr" class="button block green annual-price">Request Demo</a>
+								<a href="https://app.ruutly.com/signup?plan=start_mo" class="button block green monthly-price" style="display: none;">Request Demo</a>
 							</p>
 						</div>
 					</div>
 					<div class="col-xs-12 col-sm-6 col-md-3">
 						<div class="pricing-block highlight">
-							<p class="title">Growing</p>
-							<p class="number"><span>10</span><br>active widgets</p>
-							<p class="price">$<span class="value">699</span>/mo</p>
+							<p class="title">Grow</p>
+							<p class="number"><span>3</span><br>active widgets</p>
+							<p class="price annual-price">$<span class="value">199</span>/mo*</p>
+							<p class="price monthly-price" style="display: none;">$<span class="value">229</span>/mo*</p>
 							<p class="pricing-cta">
-								<a href="#" class="button block green">Request Demo</a>
+								<a href="https://app.ruutly.com/signup?plan=grow_yr" class="button block green annual-price">Request Demo</a>
+								<a href="https://app.ruutly.com/signup?plan=grow_mo" class="button block green monthly-price" style="display: none;">Request Demo</a>
+							</p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="pricing-block">
+							<p class="title">Scale</p>
+							<p class="number"><span>6</span><br>active widgets</p>
+							<p class="price annual-price">$<span class="value">399</span>/mo*</p>
+							<p class="price monthly-price" style="display: none;">$<span class="value">459</span>/mo*</p>
+							<p class="pricing-cta">
+								<a href="https://app.ruutly.com/signup?plan=scale_yr" class="button block green annual-price">Request Demo</a>
+								<a href="https://app.ruutly.com/signup?plan=scale_mo" class="button block green monthly-price" style="display: none;">Request Demo</a>
+							</p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<div class="pricing-block">
+							<p class="title">Soar</p>
+							<p class="number"><span>10</span><br>active widgets</p>
+							<p class="price annual-price">$<span class="value">699</span>/mo*</p>
+							<p class="price monthly-price" style="display: none;">$<span class="value">799</span>/mo*</p>
+							<p class="pricing-cta">
+								<a href="https://app.ruutly.com/signup?plan=soar_yr" class="button block green annual-price">Request Demo</a>
+								<a href="https://app.ruutly.com/signup?plan=soar_mo" class="button block green monthly-price" style="display: none;">Request Demo</a>
 							</p>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-xs-12">
+						<p class="small">* All prices are in USD</p>
 						<p>Need more than 10 widgets per month? <a href="#" class="link">Let's talk</a></p>
 					</div>
 				</div>
@@ -347,7 +356,7 @@
 				</div>
 				<div class="row">
 					<div class="col-xs-12 cta-col">
-						<a href="#" class="button xlarge green">Try it for free</a>	
+						<a href="https://app.ruutly.com/signup" class="button xlarge green">Try it for free</a>	
 					</div>
 					
 				</div>
@@ -380,6 +389,23 @@
     <script type="text/javascript">
     	$(document).ready(function(){
         $('.cocoen').cocoen();
+        $('#annual-toggle').click(function(e) {
+        	e.preventDefault();
+        	$('#annual-toggle').addClass('active');
+        	$('#month-toggle').removeClass('active');
+      	  $( ".monthly-price" ).fadeOut( 250, function() {
+					  $( ".annual-price" ).fadeIn( 250 );
+					});
+        });
+
+        $('#month-toggle').click(function(e) {
+        	e.preventDefault();
+        	$('#annual-toggle').removeClass('active');
+        	$('#month-toggle').addClass('active');
+        	$( ".annual-price" ).fadeOut( 250, function() {
+					  $( ".monthly-price" ).fadeIn( 250 );
+					});
+        });
 	    });
     </script>
 

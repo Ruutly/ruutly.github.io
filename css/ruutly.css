@@ -560,7 +560,7 @@ header .content hr:after {
 }
 
 #pricing .pricing-toggle {
-	line-height: 80px;
+  line-height: 110px;
 }
 
 #pricing .pricing-toggle .toggle-button {
@@ -572,6 +572,16 @@ header .content hr:after {
   color: #f05c7e;
   text-decoration: none;
   font-weight: 
+  -webkit-transition: all 250ms ease 0s;
+     -moz-transition: all 250ms ease 0s;
+      -ms-transition: all 250ms ease 0s;
+       -o-transition: all 250ms ease 0s;
+          transition: all 250ms ease 0s;
+}
+
+#pricing .pricing-toggle .toggle-button:hover {
+	color: #fff;
+	background-color: #DB5276;
 }
 
 #pricing .pricing-toggle .toggle-button.active {
