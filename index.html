@@ -308,7 +308,7 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<p class="small">* All prices are in USD</p>
-						<p>Need more than 10 widgets per month? <a href="#" class="link">Let's talk</a></p>
+						<p>Need more than 10 widgets per month? <a href="#" id="lets-talk" class="link">Let's talk</a></p>
 					</div>
 				</div>
 				<div class="row">
@@ -417,6 +417,7 @@
 
 	    $('#lets-talk').click(function(e) {
 	    	e.preventDefault();
+	    	Intercom('show');
 	    	analytics.track('Lets Talk');
 	    });
     </script>
