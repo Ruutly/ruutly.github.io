@@ -385,9 +385,9 @@
 		</footer>
 
 
-		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'">
 		<!-- Some CSS I decided to write -->
-		<link href="css/ruutly.css" rel="stylesheet" type="text/css">
+		<link href="css/ruutly.css" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'">
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
 			<script>
@@ -464,15 +464,14 @@
         $('#try-study').click(function(e) {
         	analytics.track('Study Cta');
         });
+
+        $('#lets-talk').click(function(e) {
+		    	e.preventDefault();
+		    	Intercom('show');
+		    	analytics.track('Lets Talk');
+		    });
 	    });
 
-
-
-	    $('#lets-talk').click(function(e) {
-	    	e.preventDefault();
-	    	Intercom('show');
-	    	analytics.track('Lets Talk');
-	    });
     </script>
 
 	</body>
