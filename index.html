@@ -108,8 +108,8 @@
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-8">
 						<div class="cocoen">
-					    <img src="img/before.jpg" alt="Before Ruutly Widget is installed">
-					    <img src="img/after.jpg" alt="Aftre Ruutly Widget is installed">
+					    <img class="lazy" data-original="img/before.jpg" src="img/before.jpg" alt="Before Ruutly Widget is installed">
+					    <img class="lazy" data-original="img/after.jpg" src="img/after.jpg" alt="Aftre Ruutly Widget is installed">
 						</div>
 					</div>
 				</div>
@@ -178,7 +178,7 @@
 						</div>
 					</div>
 					<div class="col-xs-12 col-sm-12 col-xs-visible col-sm-visible col-md-hidden">
-						<img src="./img/product.png" alt="Ruutly Product screenshots" class="img-responsive center-block">
+						<img src="./img/product.png" class="lazy" data-original="img/product.png" alt="Ruutly Product screenshots" class="img-responsive center-block">
 					</div>
 				</div>
 				<div class="row">
@@ -402,6 +402,9 @@
 
     <script type="text/javascript">
     	$(document).ready(function(){
+    		$("img.lazy").lazyload({
+			    threshold : 200
+				});
         $('.cocoen').cocoen();
         $('#annual-toggle').click(function(e) {
         	e.preventDefault();

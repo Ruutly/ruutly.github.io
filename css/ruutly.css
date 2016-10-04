@@ -349,6 +349,15 @@ header .content hr:after {
   
 }
 
+@media (min-width: 992px) {
+
+	header {
+		padding: 250px 0;
+	}
+}
+
+
+
 .button {
 	text-decoration: none;
 	text-transform: uppercase;
