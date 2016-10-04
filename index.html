@@ -458,15 +458,14 @@
         $('#try-study').click(function(e) {
         	analytics.track('Study Cta');
         });
+
+        $('#lets-talk').click(function(e) {
+		    	e.preventDefault();
+		    	Intercom('show');
+		    	analytics.track('Lets Talk');
+		    });
 	    });
-
-
-
-	    $('#lets-talk').click(function(e) {
-	    	e.preventDefault();
-	    	Intercom('show');
-	    	analytics.track('Lets Talk');
-	    });
+	    
     </script>
 
 	</body>
