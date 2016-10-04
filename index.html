@@ -93,7 +93,7 @@
 				<h1><span class="strong">Supercharge</span> your job postings</h1>
 				<hr>
 				<h2>Ruutly is a beautifully-branded, interactive candidate experience directly in your job postings. Welcome to the future.</h2>
-				<a href="https://app.ruutly.com/signup" class="button xlarge green">Try it for free</a>
+				<a href="https://app.ruutly.com/signup" id="try-top" class="button xlarge green">Try it for free</a>
 			</div>
 		</header>
 
@@ -105,7 +105,7 @@
 							<h3>See the difference <span class="strong">for yourself.</span></h3>
 							<hr>
 							<p>Click and drag the pink slider to compare a job posting without Ruutly vs. a posting with Ruutly included.</p>
-							<a href="https://app.ruutly.com/signup" class="button xlarge green">Try it for free</a>
+							<a href="https://app.ruutly.com/signup" id="try-slider" class="button xlarge green">Try it for free</a>
 						</div>
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-8">
@@ -185,7 +185,7 @@
 				</div>
 				<div class="row">
 					<div class="col-xs-12">
-						<a href="https://app.ruutly.com/signup" class="button xlarge green">Try it for free</a>	
+						<a href="https://app.ruutly.com/signup" id="try-product" class="button xlarge green">Try it for free</a>	
 					</div>
 					
 				</div>
@@ -266,8 +266,8 @@
 							<p class="price annual-price">$<span class="value">99</span>/mo*</p>
 							<p class="price monthly-price" style="display: none;">$<span class="value">119</span>/mo*</p>
 							<p class="pricing-cta">
-								<a href="https://app.ruutly.com/signup?plan=start_yr" class="button block green annual-price">Start my trial</a>
-								<a href="https://app.ruutly.com/signup?plan=start_mo" class="button block green monthly-price" style="display: none;">Start my trial</a>
+								<a href="https://app.ruutly.com/signup?plan=start_yr" id="start_yr" class="button block green annual-price">Start my trial</a>
+								<a href="https://app.ruutly.com/signup?plan=start_mo" id="start_mo" class="button block green monthly-price" style="display: none;">Start my trial</a>
 							</p>
 						</div>
 					</div>
@@ -278,8 +278,8 @@
 							<p class="price annual-price">$<span class="value">285</span>/mo*</p>
 							<p class="price monthly-price" style="display: none;">$<span class="value">345</span>/mo*</p>
 							<p class="pricing-cta">
-								<a href="https://app.ruutly.com/signup?plan=grow_yr" class="button block green annual-price">Start my trial</a>
-								<a href="https://app.ruutly.com/signup?plan=grow_mo" class="button block green monthly-price" style="display: none;">Start my trial</a>
+								<a href="https://app.ruutly.com/signup?plan=grow_yr" id="grow_yr" class="button block green annual-price">Start my trial</a>
+								<a href="https://app.ruutly.com/signup?plan=grow_mo" id="grow_mo" class="button block green monthly-price" style="display: none;">Start my trial</a>
 							</p>
 						</div>
 					</div>
@@ -290,8 +290,8 @@
 							<p class="price annual-price">$<span class="value">539</span>/mo*</p>
 							<p class="price monthly-price" style="display: none;">$<span class="value">659</span>/mo*</p>
 							<p class="pricing-cta">
-								<a href="https://app.ruutly.com/signup?plan=scale_yr" class="button block green annual-price">Start my trial</a>
-								<a href="https://app.ruutly.com/signup?plan=scale_mo" class="button block green monthly-price" style="display: none;">Start my trial</a>
+								<a href="https://app.ruutly.com/signup?plan=scale_yr" id="scale_yr" class="button block green annual-price">Start my trial</a>
+								<a href="https://app.ruutly.com/signup?plan=scale_mo" id="scale_mo" class="button block green monthly-price" style="display: none;">Start my trial</a>
 							</p>
 						</div>
 					</div>
@@ -302,8 +302,8 @@
 							<p class="price annual-price">$<span class="value">849</span>/mo*</p>
 							<p class="price monthly-price" style="display: none;">$<span class="value">1049</span>/mo*</p>
 							<p class="pricing-cta">
-								<a href="https://app.ruutly.com/signup?plan=soar_yr" class="button block green annual-price">Start my trial</a>
-								<a href="https://app.ruutly.com/signup?plan=soar_mo" class="button block green monthly-price" style="display: none;">Start my trial</a>
+								<a href="https://app.ruutly.com/signup?plan=soar_yr" id="soar_yr" class="button block green annual-price">Start my trial</a>
+								<a href="https://app.ruutly.com/signup?plan=soar_mo" id="soar_mo" class="button block green monthly-price" style="display: none;">Start my trial</a>
 							</p>
 						</div>
 					</div>
@@ -367,7 +367,7 @@
 				</div>
 				<div class="row">
 					<div class="col-xs-12 cta-col">
-						<a href="https://app.ruutly.com/signup" class="button xlarge green">Try it for free</a>	
+						<a href="https://app.ruutly.com/signup" id="try-study" class="button xlarge green">Try it for free</a>	
 					</div>
 					
 				</div>
@@ -417,7 +417,50 @@
 					  $( ".monthly-price" ).fadeIn( 250 );
 					});
         });
+
+        $('#start_yr').click(function(e) {
+        	analytics.track('start_yr');
+        });
+        $('#start_mo').click(function(e) {
+        	analytics.track('start_mo');
+        });
+        $('#grow_yr').click(function(e) {
+        	analytics.track('grow_yr');
+        });
+        $('#grow_mo').click(function(e) {
+        	analytics.track('grow_mo');
+        });
+        $('#scale_yr').click(function(e) {
+        	analytics.track('scale_yr');
+        });
+        $('#scale_mo').click(function(e) {
+        	analytics.track('scale_mo');
+        });
+        $('#soar_yr').click(function(e) {
+        	analytics.track('soar_yr');
+        });
+        $('#soar_mo').click(function(e) {
+        	analytics.track('soar_mo');
+        });
+
+        $('#try-top').click(function(e) {
+        	analytics.track('Top Cta');
+        });
+
+        $('#try-slider').click(function(e) {
+        	analytics.track('Slider Cta');
+        });
+
+        $('#try-product').click(function(e) {
+        	analytics.track('Product Cta');
+        });
+
+        $('#try-study').click(function(e) {
+        	analytics.track('Study Cta');
+        });
 	    });
+
+
 
 	    $('#lets-talk').click(function(e) {
 	    	e.preventDefault();
