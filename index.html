@@ -46,30 +46,10 @@
 		  analytics.page()
 		  }}();
 		</script>
-
-		<style type="text/css">
-			.fadeIn {
-			  animation: fadeIn 350ms ease-in-out;
-			  -o-animation: fadeIn 350ms ease-in-out;
-			  -moz-animation: fadeIn 350ms ease-in-out;
-			  -webkit-animation: fadeIn 350ms ease-in-out;
-			  opacity: 1 !important;
-			}
-
-			@keyframes fadeIn {
-			  0% {
-			    opacity: 0;
-			  }
-
-			  100% {
-			    opacity: 1;
-			  }
-			}
-		</style>
 		
 	</head>
 
-	<body id="page-top" style="opacity: 0">
+	<body id="page-top">
 
 		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -422,7 +402,6 @@
 
     <script type="text/javascript">
     	$(document).ready(function(){
-    		$('body').addClass('fadeIn');
         $('.cocoen').cocoen();
         $('#annual-toggle').click(function(e) {
         	e.preventDefault();
