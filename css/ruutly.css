@@ -1,5 +1,3 @@
-.cocoen{position:relative;overflow:hidden;line-height:0;margin:0;padding:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer}.cocoen>img{width:100%;display:block}.cocoen>div:first-child{position:absolute;top:0;left:0;height:100%;width:50%;overflow:hidden}.cocoen__drag{position:absolute;top:0;bottom:0;left:50%;width:2px;cursor:ew-resize;background:#fff;margin-left:-1px}.cocoen__drag:before{content:"";position:absolute;top:50%;left:50%;height:30px;width:8px;border:3px solid #fff;margin-left:-7px;margin-top:-18px}
-
 // Some Variables to reffer to
 // $open-sans: 'Open Sans', sans-serif !important;
 
@@ -289,39 +287,6 @@ header .content hr:after {
 	background-color: #24262F;
 }
 
-.navbar-toggle {
-  border: none;
-  background: transparent !important;
-}
-.navbar-toggle:hover {
-  background: transparent !important;
-}
-.navbar-toggle .icon-bar {
-  width: 22px;
-  transition: all 0.2s;
-}
-.navbar-toggle .top-bar {
-  transform: rotate(45deg);
-  transform-origin: 10% 10%;
-}
-.navbar-toggle .middle-bar {
-  opacity: 0;
-}
-.navbar-toggle .bottom-bar {
-  transform: rotate(-45deg);
-  transform-origin: 10% 90%;
-}
-.navbar-toggle.collapsed .top-bar {
-  transform: rotate(0);
-}
-.navbar-toggle.collapsed .middle-bar {
-  opacity: 1;
-}
-.navbar-toggle.collapsed .bottom-bar {
-  transform: rotate(0);
-}
-
-
 @media (max-width: 767px) {
 	header {
 		padding: 100px 15px;
@@ -349,15 +314,6 @@ header .content hr:after {
   
 }
 
-@media (min-width: 992px) {
-
-	header {
-		padding: 250px 0;
-	}
-}
-
-
-
 .button {
 	text-decoration: none;
 	text-transform: uppercase;
@@ -377,7 +333,7 @@ header .content hr:after {
 	padding: 10px 0;
 }
 
-.button:hover, .button:focus, .button:active {
+.button:hover, .button:focus, button:active {
 	-webkit-box-shadow: 0px 0px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 	-moz-box-shadow:    0px 0px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 	box-shadow:         0px 0px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -576,7 +532,7 @@ header .content hr:after {
 }
 
 #quote .quote-text {
-	font-weight: 600;
+	font-weight: 800;
 	font-size: 30px;
 	font-style: italic;
 }
@@ -756,7 +712,7 @@ header .content hr:after {
 	font-size: 16px;
 	line-height: 30px;
 	font-style: italic;
-	font-weight: 600;
+	font-weight: 300;
 }
 
 #study ul li img {
