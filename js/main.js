@@ -33,7 +33,7 @@
         }
     });
     $( document ).ready( function () {
-        window.alert('text');
+        
         $('.cocoen').cocoen();
         $('#annual-toggle').click(function(e) {
             e.preventDefault();
