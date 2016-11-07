@@ -1,5 +1,5 @@
 (function($) {
-
+    "use strict";
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
@@ -32,6 +32,7 @@
             top: 50
         }
     });
+    console.log('anything');
     console.log($);
     $(document).ready(function(){
         console.log('sup');
