@@ -1,4 +1,5 @@
-$(function() {
+console.log('hey');
+$(document).ready(function() {
     "use strict";
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
