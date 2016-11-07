@@ -35,6 +35,7 @@
     });
 
     $(document).ready(function(){
+        console.log('sup');
         $('.cocoen').cocoen();
         $('#annual-toggle').click(function(e) {
             e.preventDefault();
