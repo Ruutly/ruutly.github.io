@@ -32,10 +32,9 @@
             top: 50
         }
     });
-    console.log('anything');
-    console.log($);
+
     $(document).ready(function(){
-        console.log('sup');
+        window.alert('text');
         $('.cocoen').cocoen();
         $('#annual-toggle').click(function(e) {
             e.preventDefault();
