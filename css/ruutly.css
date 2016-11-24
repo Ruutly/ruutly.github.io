@@ -17,6 +17,7 @@
 html,
 body {
   height: 100%;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 h1,
@@ -783,4 +784,21 @@ footer ul li a {
 footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
 	color: #f05c7e;
 	text-decoration: none;
+}
+
+
+.form-group label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #65647A;
+}
+    
+.form-group  .form-control, .form-control:focus {
+    border: 1px solid #D3DCE6;
+    border-radius: 4px;
+    color: $form-input;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }

@@ -33,6 +33,16 @@
         }
     });
     $( document ).ready( function () {
+        function closeModal() {
+            $('#requestDemo').modal('toggle');
+        }
+        $('#requestDemoForm').submit(function(e) {
+            e.preventDefault();
+            var form = document.getElementById("requestDemoForm");
+            form.reset();
+            $('#demoSubmitButton').text('Thank you!');
+            window.setTimeout(closeModal, 1000);
+        });
         
         $('.cocoen').cocoen();
         $('#annual-toggle').click(function(e) {
