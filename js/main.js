@@ -36,12 +36,49 @@
         function closeModal() {
             $('#requestDemo').modal('toggle');
         }
+
         $('#requestDemoForm').submit(function(e) {
             e.preventDefault();
             var form = document.getElementById("requestDemoForm");
-            form.reset();
-            $('#demoSubmitButton').text('Thank you!');
-            window.setTimeout(closeModal, 1000);
+            var htmlMessage = 'Contact form<br/>' +
+                'Name: '+$('#first-name').val()+'<br/>'+
+                'Email: '+$('#email').val()+'<br/>'+
+                'Phone: '+$('#phone').val();
+            $.ajax({
+              type: "POST",
+              url: "https://mandrillapp.com/api/1.0/messages/send.json",
+              data: {
+                "key": 'i6fMMseTxAtJ6LDLLxYJng',
+                "message": {
+                  "from_email": 'info@ruutly.com',
+                  "from_name": "Ruutly Info",
+                  "to": [
+                    {
+                      "email": 'serg@ruutly.com',
+                      "name": 'Sergiy Dybskiy',
+                      "type": 'to'
+                    },
+                    {
+                      "email": 'ryan@ruutly.com',
+                      "name": 'Ryan Porter',
+                      "type": 'to'
+                    },
+                    {
+                      "email": 'tyler@ruutly.com',
+                      "name": 'Tyler Smith',
+                      "type": 'to'
+                    }
+                  ],
+                  "subject": 'Demo Request from Ruutly Homepage',
+                  "html": htmlMessage
+                }
+              },
+              success: function() {
+                form.reset();
+                $('#demoSubmitButton').text('Thank you!');
+                window.setTimeout(closeModal, 1000);    
+              }
+            });
         });
         
         $('.cocoen').cocoen();
