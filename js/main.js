@@ -41,7 +41,7 @@
             e.preventDefault();
             var form = document.getElementById("requestDemoForm");
             var htmlMessage = 'Contact form<br/>' +
-                'Name: '+$('#first-name').val()+'<br/>'+
+                'Name: '+$('#first-name').val()+' '+$('#last-name').val()+'<br/>'+
                 'Email: '+$('#email').val()+'<br/>'+
                 'Phone: '+$('#phone').val();
             $.ajax({
