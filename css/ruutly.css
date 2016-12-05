@@ -603,7 +603,7 @@ header .content hr:after {
 }
 
 #pricing .pricing-block.highlight:after {
-	content: "Best Value";
+	content: "Most Popular";
 	position: absolute;
   top: -25px;
   right: 0px;
