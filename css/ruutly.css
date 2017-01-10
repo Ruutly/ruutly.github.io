@@ -119,7 +119,7 @@ section {
 }
 
 .navbar-brand img {
-	height: 60px;
+	height: 55px;
 	-webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -808,4 +808,38 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+}
+
+header#apply-header {
+	padding: 75px 0 0 0;
+}
+
+#apply .container {
+	max-width: 900px;
+}
+
+#apply ul li {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+#apply .content hr {
+	border-color: #24262F;
+}
+
+#apply .content hr:after {
+	background-color: #24262F;
+}
+
+@media (max-width: 767px) {
+	#apply ul li {	  
+	  font-size: 12px;
+	  line-height: 25px;
+	}
+}
+
+footer p {
+	margin: 10px 0 10px 0;
 }

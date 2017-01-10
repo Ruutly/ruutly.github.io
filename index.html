@@ -103,7 +103,13 @@
               <a href="https://app.ruutly.com/login" id="login-link" target="_blank">Login</a>
             </li>
             <li>
+              <a href="https://medium.com/ruutly" id="blog-link" target="_blank">Blog</a>
+            </li>
+            <li>
               <a href="#" data-toggle="modal" data-target="#requestDemo" id="demo-link" class="header-button">Request Demo</a>
+            </li>
+            <li>
+              <a href="/apply" id="apply-link">We're hiring!</a>
             </li>
           </ul>
         </div>
@@ -399,7 +405,22 @@
 
 		<footer>
 			<div class="container">
-				<p>© 2016 Going 180 Media Inc. All Rights Reserved.</p>
+				<ul class="list-inline">
+					<li><a href="https://www.ruutly.com">Home</a></li>
+					<li>
+              <a href="https://app.ruutly.com/login" target="_blank">Login</a>
+            </li>
+            <li>
+              <a href="https://medium.com/ruutly" target="_blank">Blog</a>
+            </li>
+            <li>
+              <a href="#" data-toggle="modal" data-target="#requestDemo" class="header-button">Request Demo</a>
+            </li>
+            <li>
+              <a href="https://www.ruutly.com/apply">We're hiring!</a>
+            </li>
+				</ul>
+				<p>© <span id="cp-year"></span> Going 180 Media Inc. All Rights Reserved.</p>
 				<ul class="list-inline">
 					<li><a href="https://www.iubenda.com/privacy-policy/7922118" target="_blank">Privacy Policy</a></li>
 					<li><a href="https://www.ruutly.com/terms" target="_blank">Terms of Service</a></li>
@@ -446,7 +467,12 @@
 		    </div><!-- /.modal-content -->
 		  </div><!-- /.modal-dialog -->
 		</div><!-- /.modal -->
-	
+
+		<script type="text/javascript">
+    	const year = new Date().getFullYear();
+    	const text = document.querySelector('#cp-year');
+    	text.innerHTML = year;
+    </script>
 		<!-- Jquery -->
 		<script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
 		<script src="js/vendor/jquery.mobile-events.min.js"></script>
@@ -458,6 +484,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 		<!-- Some other stuff -->
     <script src="js/main.js"></script>
+
 
 	</body>
 
