@@ -381,14 +381,21 @@ header .content hr:after {
 	}
 }
 
-.cocoen__drag {
-	background-color: #f05c7e !important;
+#about .cocoen__drag {
+	background-color: #f05c7e;
 }
 
-.cocoen__drag:before {
-	border-color: #f05c7e !important;
-  width: 14px !important;
-  margin-left: -7px !important;
+#about .cocoen__drag:before {
+	border-color: #f05c7e;
+  width: 45px;
+  height: 45px;
+  margin-left: -22.5px;
+  border-radius: 45px;
+  background-image: url('https://www.ruutly.com/img/icon_grab_pink.png');
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: 4px;
+  background-color: #fff;
 }
 
 #product {
