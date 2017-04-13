@@ -66,8 +66,8 @@
                       "type": 'to'
                     },
                     {
-                      "email": 'tyler@ruutly.com',
-                      "name": 'Tyler Smith',
+                      "email": 'jahmal@ruutly.com',
+                      "name": 'Jahmal Gittens',
                       "type": 'to'
                     }
                   ],
