@@ -530,8 +530,13 @@ header .content hr:after {
 	min-height: 206px;
 }
 
-#quote {
+#quote h3{
 	text-align: center;
+}
+
+#quote hr:after {
+	background-color: #FFF;
+	height: 3px;
 }
 
 #quote .quote {
