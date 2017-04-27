@@ -606,7 +606,16 @@ header .content hr:after {
 	padding: 20px;
 	border: 2px solid #24262F;
 	border-radius: 4px;
-	margin: 20px 0;
+	margin: 20px auto;
+	max-width: 300px;
+}
+
+#pricing .row.unlimited {
+	background-color: #24262F;
+}
+
+#pricing .unlimited .pricing-block .title, #pricing .unlimited .pricing-block .price .value, #pricing .unlimited .pricing-block .number {
+	color: #fff;
 }
 
 #pricing .pricing-block.highlight {
