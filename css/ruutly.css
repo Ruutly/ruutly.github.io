@@ -20,6 +20,10 @@ body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
+body {
+	padding-top: 50px;
+}
+
 h1,
 h2,
 h3,
@@ -72,8 +76,16 @@ section {
 	color: #24262F;
 }
 
+.bg-white h2 {
+	color: #24262F;
+}
+
 .bg-offwhite {
 	background-color: #F0F2F7;
+	color: #24262F;
+}
+
+.bg-offwhite h2 {
 	color: #24262F;
 }
 
@@ -95,6 +107,7 @@ section {
 	border: 2px solid #25DFB7;
   padding: 5px 15px;
 	margin-top: 10px;
+	border-radius: 5px;
 	-webkit-transition: all 250ms ease 0s;
    -moz-transition: all 250ms ease 0s;
     -ms-transition: all 250ms ease 0s;
@@ -104,7 +117,7 @@ section {
 
 .navbar-nav>li>a.header-button:hover, .navbar-nav>li>a.header-button:active, .navbar-nav>li>a.header-button:focus {
 	color: #fff !important;
-	background-color: #22BC97;
+	background-color: #25DFB7;
 }
 
 .navbar-default {
@@ -169,6 +182,7 @@ section {
 .navbar-default .nav > li.active > a:focus:hover {
   background-color: transparent;
 }
+
 @media (min-width: 768px) {
   .navbar-default {
     background-color: transparent;
@@ -238,6 +252,9 @@ section {
 }
 
 @media (max-width: 767px) {
+	.navbar-default .nav > li > a {
+	  text-align: center;
+	}
 	h1 {
 		font-size: 30px;
 	}
@@ -254,15 +271,61 @@ section {
 
 header {
   position: relative;
-  display: block;
-  height: auto;
-  width: auto;
-  background-color: #FFF;
+  background-color: #C96DD8;  /* fallback for old browsers */
+  background: url('../img/watermark.png') center center, -webkit-linear-gradient(to right, #1d2671, #C96DD8); /* Chrome 10-25, Safari 5.1-6 */
+  background: url('../img/watermark.png') center center, linear-gradient(to right, #1d2671, #C96DD8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: space;
 }
 
-header h1, h2 {
-	color: #24262F;
-  margin-bottom: 30px;
+header .ruutly-row {
+	height: 100%;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .ruutly-drag {
+	font-family: "Caveat", Helvetica, Arial, sans-serif;
+	color: #fff;
+	font-size: 20px;
+}
+
+header .ruutly-row .ruutly-col {
+	width: 100%;
+	padding: 0 20px;
+}
+
+header .wrapper {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+	text-transform: uppercase;
+	font-size: 22px;
+}
+
+header h2 {
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+
+.ruutly-header h1, h2 {
+	color: #FFF;
+	margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 1.4;
 }
 
 hr {
@@ -282,7 +345,7 @@ hr:after {
 }
 
 header .content {
-	text-align: center;
+	text-align: left;
 }
 
 header .content hr {
@@ -293,30 +356,34 @@ header .content hr:after {
 	background-color: #24262F;
 }
 
+@media (max-width: 991px) {
+	header {
+		background: -webkit-linear-gradient(to right, #1d2671, #C96DD8); /* Chrome 10-25, Safari 5.1-6 */
+	  background: linear-gradient(to right, #1d2671, #C96DD8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	}
+
+	header .ruutly-row {
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	header .ruutly-col:first-child {
+		text-align: center;
+		padding-bottom: 35px;
+	}
+	
+}
+
 @media (max-width: 767px) {
 	header {
-		padding: 100px 15px;
+		padding: 50px 0;
 	}
-	header.content {
-		width: 100%;
-	}
-
-	.button.xlarge {
-		font-size: 14px;
-		padding: 15px 50px;
-	}
-
 }
 
 @media (min-width: 768px) {
 
 	header {
-		padding: 175px 0;
+		padding: 100px 0;
 	}
-  header .content {
-	  margin: auto;
-	  max-width: 768px;
-	} 
   
 }
 
@@ -349,58 +416,139 @@ header .content hr:after {
 
 .button.xlarge {
 	font-size: 16px;
-	padding: 20px 60px;
-	line-height: 100px;
+	padding: 15px 40px;
+	line-height: 50px;
 }
 
 .button.green {
 	background-color: #25DFB7;
 }
 
-#about .content hr {
-	border-color: #24262F;
-	border-width: 3px;
-	margin-top: 10px;
-}
-
-#about .content hr:after {
-	background-color: #24262F;
-	height: 3px;
+#about .content h3 {
+	text-transform: uppercase;
+	font-weight: 600;
 }
 
 #about .content {
-	text-align: center;
+	margin-bottom: 40px;
 }
 
-@media (min-width: 767px) {
-	#about .content {
-		max-width: 400px;
-		margin: 0 auto;
-	}
+header .cocoen {
+	overflow: visible;
+	background-image: url('../img/imac.png');
 }
 
-
-@media (min-width: 992px) {
-	#about .content {
-		margin-top: 100px;
-	}
+header .ruutly-before-after {
+	position: relative;
+  padding-top: 83.4%;
+  height: 0;
+  -webkit-transition: opacity 250ms ease 0s;
+     -moz-transition: opacity 250ms ease 0s;
+      -ms-transition: opacity 250ms ease 0s;
+       -o-transition: opacity 250ms ease 0s;
+          transition: opacity 250ms ease 0s;
 }
 
-#about .cocoen__drag {
-	background-color: #f05c7e;
-}
-
-#about .cocoen__drag:before {
-	border-color: #f05c7e;
-  width: 45px;
-  height: 45px;
-  margin-left: -22.5px;
-  border-radius: 45px;
-  background-image: url('https://www.ruutly.com/img/icon_grab_pink.png');
-  background-size: 30px 30px;
+header .ruutly-before-after:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url(../img/imac.png) center center;
   background-repeat: no-repeat;
-  background-position: 4px;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+header .ruutly-before-after .ruutly-screen {
+	position: absolute;
+	top: 4%;
+	left: 3%;
+	right: 3%;
+}
+
+header .cocoen__drag {
+	background-color: #25DFB7;
+}
+
+header .cocoen__drag:before {
+	border-color: #25DFB7;
+  width: 42px;
+  height: 42px;
+  top: initial;
+  bottom: 10px;
+  margin-left: -21px;
+  border-radius: 21px;
+  content: "\f07e";
+  font: normal normal normal 36px/1 FontAwesome;
+  color: #24262F;
   background-color: #fff;
+}
+
+.ruutly-container {
+	max-width: 900px;
+	margin: 0 auto;
+	-webkit-transition: width 250ms ease 0s;
+     -moz-transition: width 250ms ease 0s;
+      -ms-transition: width 250ms ease 0s;
+       -o-transition: width 250ms ease 0s;
+          transition: width 250ms ease 0s;
+}
+
+.ruutly-container .ruutly-toggle i {
+	font-size: 40px;
+}
+
+.ruutly-container .ruutly-toggle {
+	color: #24262F;
+	opacity: .5;
+	text-decoration: none;
+	padding: 20px;
+	margin-top: 25px;
+	display: inline-block;
+}
+
+.ruutly-container .ruutly-toggle:hover {
+	opacity: 1;
+}
+
+.ruutly-container .ruutly-toggle.active {
+	opacity: 1;
+	border-bottom: 2px solid;
+}
+
+.ruutly-integrations ul {
+	list-style-type: none;
+	padding: 0;
+	display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	max-width: 900px;
+	margin: 50px auto;
+
+}
+
+.ruutly-integrations ul li {
+	padding: 15px;
+}
+
+#tools h3 {
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+#tools .media {
+	margin-bottom: 75px;
 }
 
 #product {
@@ -420,6 +568,17 @@ header .content hr:after {
 
 
 @media (max-width: 767px) {
+	.button.xlarge {
+    font-size: 12px;
+    padding: 10px 35px;
+    line-height: 50px;
+	}
+	.media-middle {
+		padding: 0;
+		padding-top: 20px;
+		width: 100%;
+		float: left;
+	}
 	#product {
 		background-image: none;
 	}
@@ -638,8 +797,15 @@ header .content hr:after {
   font-weight: 800;
 }
 
-#pricing .pricing-block .title {
+#pricing .pricing-block .title, #pricing h3 {
 	font-size: 20px;
+	font-weight: 600;
+	font-style: italic;
+	color: #24262F;
+}
+
+#pricing .small {
+	font-size: 14px;
 	font-weight: 600;
 	font-style: italic;
 	color: #24262F;
@@ -698,10 +864,18 @@ header .content hr:after {
 	margin-right: 5px;
 }
 
+.ruutly-container p {
+	margin-bottom: 40px;
+}
+
 @media (max-width: 991px) {
 	#pricing ul li {
 		max-width: 280px;
 		margin: 0 auto;
+	}
+
+	.ruutly-container p {
+		display: none;
 	}
 
 }

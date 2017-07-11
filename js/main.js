@@ -23,17 +23,15 @@
 
     console.log('hi');
 
+    window.setTimeout(function() {
+        $('.ruutly-before-after').css('opacity', 1);
+    }, 300);
+
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a').click(function() {
         $('.navbar-toggle:visible').click();
     });
 
-    // Offset for Main Navigation
-    $('#mainNav').affix({
-        offset: {
-            top: 50
-        }
-    });
     $( document ).ready( function () {
         function closeModal() {
             $('#requestDemo').modal('toggle');
@@ -100,6 +98,19 @@
             $( ".annual-price" ).fadeOut( 250, function() {
                       $( ".monthly-price" ).fadeIn( 250 );
                     });
+        });
+
+        $('.ruutly-toggle').click(function(e) {
+            e.preventDefault();
+            if ($(this).hasClass('desktop')) {
+                $('.mobile').removeClass('active');
+                $('.desktop').addClass('active');
+                $('.ruutly-container').width(900);
+            } else {
+                $('.desktop').removeClass('active');
+                $('.mobile').addClass('active');
+                $('.ruutly-container').width(400);
+            }
         });
 
         // CTA Analytics
