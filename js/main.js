@@ -31,9 +31,6 @@
     });
 
     $( document ).ready( function () {
-        const body = document.querySelector('body');
-        body.style.opacity = 1;
-
         function closeModal() {
             $('#requestDemo').modal('toggle');
         }
