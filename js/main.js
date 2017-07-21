@@ -21,8 +21,6 @@
         offset: 100
     });
 
-    console.log('hi');
-
     window.setTimeout(function() {
         $('.ruutly-before-after').css('opacity', 1);
     }, 300);
@@ -33,6 +31,9 @@
     });
 
     $( document ).ready( function () {
+        const body = document.querySelector('body');
+        body.style.opacity = 1;
+
         function closeModal() {
             $('#requestDemo').modal('toggle');
         }
